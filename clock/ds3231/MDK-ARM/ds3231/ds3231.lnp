@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"ds3231\startup_stm32f407xx.o"
+"ds3231\main.o"
+"ds3231\stm32f4xx_it.o"
+"ds3231\stm32f4xx_hal_msp.o"
+"ds3231\lcd_i2c.o"
+"ds3231\stm32f4xx_hal_i2c.o"
+"ds3231\stm32f4xx_hal_i2c_ex.o"
+"ds3231\stm32f4xx_hal_rcc.o"
+"ds3231\stm32f4xx_hal_rcc_ex.o"
+"ds3231\stm32f4xx_hal_flash.o"
+"ds3231\stm32f4xx_hal_flash_ex.o"
+"ds3231\stm32f4xx_hal_flash_ramfunc.o"
+"ds3231\stm32f4xx_hal_gpio.o"
+"ds3231\stm32f4xx_hal_dma_ex.o"
+"ds3231\stm32f4xx_hal_dma.o"
+"ds3231\stm32f4xx_hal_pwr.o"
+"ds3231\stm32f4xx_hal_pwr_ex.o"
+"ds3231\stm32f4xx_hal_cortex.o"
+"ds3231\stm32f4xx_hal.o"
+"ds3231\stm32f4xx_hal_exti.o"
+"ds3231\system_stm32f4xx.o"
+--strict --scatter "ds3231\ds3231.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ds3231.map" -o ds3231\ds3231.axf

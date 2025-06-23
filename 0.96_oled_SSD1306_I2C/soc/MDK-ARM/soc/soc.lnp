@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"soc\startup_stm32f407xx.o"
+"soc\main.o"
+"soc\stm32f4xx_it.o"
+"soc\stm32f4xx_hal_msp.o"
+"soc\stm32f4xx_hal_i2c.o"
+"soc\stm32f4xx_hal_i2c_ex.o"
+"soc\stm32f4xx_hal_rcc.o"
+"soc\stm32f4xx_hal_rcc_ex.o"
+"soc\stm32f4xx_hal_flash.o"
+"soc\stm32f4xx_hal_flash_ex.o"
+"soc\stm32f4xx_hal_flash_ramfunc.o"
+"soc\stm32f4xx_hal_gpio.o"
+"soc\stm32f4xx_hal_dma_ex.o"
+"soc\stm32f4xx_hal_dma.o"
+"soc\stm32f4xx_hal_pwr.o"
+"soc\stm32f4xx_hal_pwr_ex.o"
+"soc\stm32f4xx_hal_cortex.o"
+"soc\stm32f4xx_hal.o"
+"soc\stm32f4xx_hal_exti.o"
+"soc\stm32f4xx_hal_tim.o"
+"soc\stm32f4xx_hal_tim_ex.o"
+"soc\system_stm32f4xx.o"
+--strict --scatter "soc\soc.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "soc.map" -o soc\soc.axf

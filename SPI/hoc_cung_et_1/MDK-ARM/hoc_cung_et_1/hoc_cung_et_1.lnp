@@ -1,0 +1,24 @@
+--cpu Cortex-M4.fp
+"hoc_cung_et_1\startup_stm32f407xx.o"
+"hoc_cung_et_1\main.o"
+"hoc_cung_et_1\stm32f4xx_it.o"
+"hoc_cung_et_1\stm32f4xx_hal_msp.o"
+"hoc_cung_et_1\stm32f4xx_hal_spi.o"
+"hoc_cung_et_1\stm32f4xx_hal_rcc.o"
+"hoc_cung_et_1\stm32f4xx_hal_rcc_ex.o"
+"hoc_cung_et_1\stm32f4xx_hal_flash.o"
+"hoc_cung_et_1\stm32f4xx_hal_flash_ex.o"
+"hoc_cung_et_1\stm32f4xx_hal_flash_ramfunc.o"
+"hoc_cung_et_1\stm32f4xx_hal_gpio.o"
+"hoc_cung_et_1\stm32f4xx_hal_dma_ex.o"
+"hoc_cung_et_1\stm32f4xx_hal_dma.o"
+"hoc_cung_et_1\stm32f4xx_hal_pwr.o"
+"hoc_cung_et_1\stm32f4xx_hal_pwr_ex.o"
+"hoc_cung_et_1\stm32f4xx_hal_cortex.o"
+"hoc_cung_et_1\stm32f4xx_hal.o"
+"hoc_cung_et_1\stm32f4xx_hal_exti.o"
+"hoc_cung_et_1\system_stm32f4xx.o"
+--strict --scatter "hoc_cung_et_1\hoc_cung_et_1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hoc_cung_et_1.map" -o hoc_cung_et_1\hoc_cung_et_1.axf

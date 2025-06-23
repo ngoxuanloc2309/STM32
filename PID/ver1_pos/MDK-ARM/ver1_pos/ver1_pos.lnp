@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"ver1_pos\startup_stm32f103xb.o"
+"ver1_pos\main.o"
+"ver1_pos\stm32f1xx_it.o"
+"ver1_pos\stm32f1xx_hal_msp.o"
+"ver1_pos\stm32f1xx_hal_gpio_ex.o"
+"ver1_pos\stm32f1xx_hal_tim.o"
+"ver1_pos\stm32f1xx_hal_tim_ex.o"
+"ver1_pos\stm32f1xx_hal.o"
+"ver1_pos\stm32f1xx_hal_rcc.o"
+"ver1_pos\stm32f1xx_hal_rcc_ex.o"
+"ver1_pos\stm32f1xx_hal_gpio.o"
+"ver1_pos\stm32f1xx_hal_dma.o"
+"ver1_pos\stm32f1xx_hal_cortex.o"
+"ver1_pos\stm32f1xx_hal_pwr.o"
+"ver1_pos\stm32f1xx_hal_flash.o"
+"ver1_pos\stm32f1xx_hal_flash_ex.o"
+"ver1_pos\stm32f1xx_hal_exti.o"
+"ver1_pos\system_stm32f1xx.o"
+--strict --scatter "ver1_pos\ver1_pos.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ver1_pos.map" -o ver1_pos\ver1_pos.axf

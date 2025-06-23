@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Logan LENOVO, Ngo, LIC=585FJ-U7M0P-637MB-2KZMN-8RH78-M5XFE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.17
+Toolchain Path:  D:\KeilC v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+D:\STM32\some_projects_in_myfree_time\SPI\rfid_rc522\MDK-ARM\rfid_rc522.uvprojx
+Project File Date:  03/26/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\KeilC v5\ARM\ARMCC\Bin'
+Build target 'rfid_rc522'
+compiling rc522.c...
+..\Core\Src\rc522.c(10): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+S_PORT, 
+S_PIN, 0);
+..\Core\Src\rc522.c(16): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+S_PORT, 
+S_PIN, 1);
+..\Core\Src\rc522.c(21): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+S_PORT, 
+S_PIN, 0);
+..\Core\Src\rc522.c(24): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+S_PORT, 
+S_PIN, 1);
+..\Core\Src\rc522.c(55): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+S_PORT, 
+S_PIN, 1);
+..\Core\Src\rc522.c(56): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+ST_PORT,
+ST_PIN,1);
+..\Core\Src\rc522.c: 6 warnings, 0 errors
+compiling main.c...
+../Core/Src/main.c(117): warning:  #223-D: function "MFRC522_Request" declared implicitly
+  		status = MFRC522_Request(PICC_REQIDL, str);	//MFRC522_Request(0x26, str)
+../Core/Src/main.c(118): warning:  #223-D: function "MFRC522_Anticoll" declared implicitly
+  		status = MFRC522_Anticoll(str);//Take a collision, look up 5 bytes
+../Core/Src/main.c: 2 warnings, 0 errors
+linking...
+rfid_rc522\rfid_rc522.axf: Error: L6218E: Undefined symbol MFRC522_Anticoll (referred from main.o).
+rfid_rc522\rfid_rc522.axf: Error: L6218E: Undefined symbol MFRC522_Request (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+"rfid_rc522\rfid_rc522.axf" - 2 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\STM32\some_projects_in_myfree_time\SPI\rfid_rc522\MDK-ARM\RTE
+  D:\KeilC v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\KeilC v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

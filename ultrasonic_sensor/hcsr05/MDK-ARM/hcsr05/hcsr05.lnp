@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hcsr05\startup_stm32f103xb.o"
+"hcsr05\main.o"
+"hcsr05\stm32f1xx_it.o"
+"hcsr05\stm32f1xx_hal_msp.o"
+"hcsr05\stm32f1xx_hal_gpio_ex.o"
+"hcsr05\stm32f1xx_hal_tim.o"
+"hcsr05\stm32f1xx_hal_tim_ex.o"
+"hcsr05\stm32f1xx_hal.o"
+"hcsr05\stm32f1xx_hal_rcc.o"
+"hcsr05\stm32f1xx_hal_rcc_ex.o"
+"hcsr05\stm32f1xx_hal_gpio.o"
+"hcsr05\stm32f1xx_hal_dma.o"
+"hcsr05\stm32f1xx_hal_cortex.o"
+"hcsr05\stm32f1xx_hal_pwr.o"
+"hcsr05\stm32f1xx_hal_flash.o"
+"hcsr05\stm32f1xx_hal_flash_ex.o"
+"hcsr05\stm32f1xx_hal_exti.o"
+"hcsr05\system_stm32f1xx.o"
+--strict --scatter "hcsr05\hcsr05.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hcsr05.map" -o hcsr05\hcsr05.axf

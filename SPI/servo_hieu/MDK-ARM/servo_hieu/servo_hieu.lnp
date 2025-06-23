@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"servo_hieu\startup_stm32f103xb.o"
+"servo_hieu\main.o"
+"servo_hieu\stm32f1xx_it.o"
+"servo_hieu\stm32f1xx_hal_msp.o"
+"servo_hieu\stm32f1xx_hal_gpio_ex.o"
+"servo_hieu\stm32f1xx_hal_tim.o"
+"servo_hieu\stm32f1xx_hal_tim_ex.o"
+"servo_hieu\stm32f1xx_hal.o"
+"servo_hieu\stm32f1xx_hal_rcc.o"
+"servo_hieu\stm32f1xx_hal_rcc_ex.o"
+"servo_hieu\stm32f1xx_hal_gpio.o"
+"servo_hieu\stm32f1xx_hal_dma.o"
+"servo_hieu\stm32f1xx_hal_cortex.o"
+"servo_hieu\stm32f1xx_hal_pwr.o"
+"servo_hieu\stm32f1xx_hal_flash.o"
+"servo_hieu\stm32f1xx_hal_flash_ex.o"
+"servo_hieu\stm32f1xx_hal_exti.o"
+"servo_hieu\system_stm32f1xx.o"
+--strict --scatter "servo_hieu\servo_hieu.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "servo_hieu.map" -o servo_hieu\servo_hieu.axf

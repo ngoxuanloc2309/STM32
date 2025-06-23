@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"section1\startup_stm32f407xx.o"
+"section1\main.o"
+"section1\stm32f4xx_it.o"
+"section1\stm32f4xx_hal_msp.o"
+"section1\fonts.o"
+"section1\ssd1306.o"
+"section1\stm32f4xx_hal_i2c.o"
+"section1\stm32f4xx_hal_i2c_ex.o"
+"section1\stm32f4xx_hal_rcc.o"
+"section1\stm32f4xx_hal_rcc_ex.o"
+"section1\stm32f4xx_hal_flash.o"
+"section1\stm32f4xx_hal_flash_ex.o"
+"section1\stm32f4xx_hal_flash_ramfunc.o"
+"section1\stm32f4xx_hal_gpio.o"
+"section1\stm32f4xx_hal_dma_ex.o"
+"section1\stm32f4xx_hal_dma.o"
+"section1\stm32f4xx_hal_pwr.o"
+"section1\stm32f4xx_hal_pwr_ex.o"
+"section1\stm32f4xx_hal_cortex.o"
+"section1\stm32f4xx_hal.o"
+"section1\stm32f4xx_hal_exti.o"
+"section1\system_stm32f4xx.o"
+--strict --scatter "section1\section1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "section1.map" -o section1\section1.axf

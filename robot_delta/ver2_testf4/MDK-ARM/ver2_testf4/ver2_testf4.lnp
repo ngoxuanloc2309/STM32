@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"ver2_testf4\startup_stm32f407xx.o"
+"ver2_testf4\main.o"
+"ver2_testf4\stm32f4xx_it.o"
+"ver2_testf4\stm32f4xx_hal_msp.o"
+"ver2_testf4\stm32f4xx_hal_i2c.o"
+"ver2_testf4\stm32f4xx_hal_i2c_ex.o"
+"ver2_testf4\stm32f4xx_hal_rcc.o"
+"ver2_testf4\stm32f4xx_hal_rcc_ex.o"
+"ver2_testf4\stm32f4xx_hal_flash.o"
+"ver2_testf4\stm32f4xx_hal_flash_ex.o"
+"ver2_testf4\stm32f4xx_hal_flash_ramfunc.o"
+"ver2_testf4\stm32f4xx_hal_gpio.o"
+"ver2_testf4\stm32f4xx_hal_dma_ex.o"
+"ver2_testf4\stm32f4xx_hal_dma.o"
+"ver2_testf4\stm32f4xx_hal_pwr.o"
+"ver2_testf4\stm32f4xx_hal_pwr_ex.o"
+"ver2_testf4\stm32f4xx_hal_cortex.o"
+"ver2_testf4\stm32f4xx_hal.o"
+"ver2_testf4\stm32f4xx_hal_exti.o"
+"ver2_testf4\system_stm32f4xx.o"
+--strict --scatter "ver2_testf4\ver2_testf4.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ver2_testf4.map" -o ver2_testf4\ver2_testf4.axf

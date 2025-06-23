@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"version2\startup_stm32f103xb.o"
+"version2\rc522.o"
+"version2\main.o"
+"version2\stm32f1xx_it.o"
+"version2\stm32f1xx_hal_msp.o"
+"version2\stm32f1xx_hal_gpio_ex.o"
+"version2\stm32f1xx_hal_spi.o"
+"version2\stm32f1xx_hal.o"
+"version2\stm32f1xx_hal_rcc.o"
+"version2\stm32f1xx_hal_rcc_ex.o"
+"version2\stm32f1xx_hal_gpio.o"
+"version2\stm32f1xx_hal_dma.o"
+"version2\stm32f1xx_hal_cortex.o"
+"version2\stm32f1xx_hal_pwr.o"
+"version2\stm32f1xx_hal_flash.o"
+"version2\stm32f1xx_hal_flash_ex.o"
+"version2\stm32f1xx_hal_exti.o"
+"version2\system_stm32f1xx.o"
+--strict --scatter "version2\version2.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "version2.map" -o version2\version2.axf

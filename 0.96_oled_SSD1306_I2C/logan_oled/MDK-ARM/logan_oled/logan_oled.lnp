@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"logan_oled\startup_stm32f407xx.o"
+"logan_oled\font.o"
+"logan_oled\oled_i2c.o"
+"logan_oled\main.o"
+"logan_oled\stm32f4xx_it.o"
+"logan_oled\stm32f4xx_hal_msp.o"
+"logan_oled\stm32f4xx_hal_i2c.o"
+"logan_oled\stm32f4xx_hal_i2c_ex.o"
+"logan_oled\stm32f4xx_hal_rcc.o"
+"logan_oled\stm32f4xx_hal_rcc_ex.o"
+"logan_oled\stm32f4xx_hal_flash.o"
+"logan_oled\stm32f4xx_hal_flash_ex.o"
+"logan_oled\stm32f4xx_hal_flash_ramfunc.o"
+"logan_oled\stm32f4xx_hal_gpio.o"
+"logan_oled\stm32f4xx_hal_dma_ex.o"
+"logan_oled\stm32f4xx_hal_dma.o"
+"logan_oled\stm32f4xx_hal_pwr.o"
+"logan_oled\stm32f4xx_hal_pwr_ex.o"
+"logan_oled\stm32f4xx_hal_cortex.o"
+"logan_oled\stm32f4xx_hal.o"
+"logan_oled\stm32f4xx_hal_exti.o"
+"logan_oled\system_stm32f4xx.o"
+--strict --scatter "logan_oled\logan_oled.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "logan_oled.map" -o logan_oled\logan_oled.axf

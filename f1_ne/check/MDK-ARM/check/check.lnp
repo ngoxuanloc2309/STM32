@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"check\startup_stm32f103xb.o"
+"check\dht11.o"
+"check\main.o"
+"check\stm32f1xx_it.o"
+"check\stm32f1xx_hal_msp.o"
+"check\stm32f1xx_hal_gpio_ex.o"
+"check\stm32f1xx_hal_tim.o"
+"check\stm32f1xx_hal_tim_ex.o"
+"check\stm32f1xx_hal.o"
+"check\stm32f1xx_hal_rcc.o"
+"check\stm32f1xx_hal_rcc_ex.o"
+"check\stm32f1xx_hal_gpio.o"
+"check\stm32f1xx_hal_dma.o"
+"check\stm32f1xx_hal_cortex.o"
+"check\stm32f1xx_hal_pwr.o"
+"check\stm32f1xx_hal_flash.o"
+"check\stm32f1xx_hal_flash_ex.o"
+"check\stm32f1xx_hal_exti.o"
+"check\stm32f1xx_hal_uart.o"
+"check\system_stm32f1xx.o"
+--strict --scatter "check\check.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "check.map" -o check\check.axf

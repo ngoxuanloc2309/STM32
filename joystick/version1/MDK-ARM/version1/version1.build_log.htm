@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Logan LENOVO, Ngo, LIC=585FJ-U7M0P-637MB-2KZMN-8RH78-M5XFE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.17
+Toolchain Path:  D:\KeilC v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+D:\STM32\some_projects_in_myfree_time\joystick\version1\MDK-ARM\version1.uvprojx
+Project File Date:  04/19/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\KeilC v5\ARM\ARMCC\Bin'
+Build target 'version1'
+compiling main.c...
+../Core/Inc/kalman.h(9): warning:  #1295-D: Deprecated declaration getKalmanGain - give arg types
+     float getKalmanGain();
+../Core/Inc/kalman.h(10): warning:  #1295-D: Deprecated declaration getEstimateError - give arg types
+     float getEstimateError();
+../Core/Inc/kalman.h(25): warning:  #1-D: last line of file ends without a newline
+   */
+../Core/Src/main.c(70): warning:  #177-D: variable "j1" was declared but never referenced
+  static uint32_t j1, j2, val[4], val_kalman[2];
+../Core/Src/main.c(70): warning:  #177-D: variable "j2" was declared but never referenced
+  static uint32_t j1, j2, val[4], val_kalman[2];
+../Core/Src/main.c(70): warning:  #550-D: variable "val_kalman" was set but never used
+  static uint32_t j1, j2, val[4], val_kalman[2];
+../Core/Src/main.c(72): warning:  #177-D: variable "x_kalman" was declared but never referenced
+  static int32_t joystick_angle1, joystick_angle2,x1, x_kalman, y1, y_kalman, x2, y2, angle_kalman;
+../Core/Src/main.c(72): warning:  #177-D: variable "y_kalman" was declared but never referenced
+  static int32_t joystick_angle1, joystick_angle2,x1, x_kalman, y1, y_kalman, x2, y2, angle_kalman;
+../Core/Src/main.c(72): warning:  #177-D: variable "angle_kalman" was declared but never referenced
+  static int32_t joystick_angle1, joystick_angle2,x1, x_kalman, y1, y_kalman, x2, y2, angle_kalman;
+../Core/Src/main.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=19286 RO-data=1026 RW-data=88 ZI-data=1880  
+FromELF: creating hex file...
+"version1\version1.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\STM32\some_projects_in_myfree_time\joystick\version1\MDK-ARM\RTE
+  D:\KeilC v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\KeilC v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

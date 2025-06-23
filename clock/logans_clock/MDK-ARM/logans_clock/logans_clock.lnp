@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"logans_clock\startup_stm32f407xx.o"
+"logans_clock\lcd_i2c.o"
+"logans_clock\main.o"
+"logans_clock\stm32f4xx_it.o"
+"logans_clock\stm32f4xx_hal_msp.o"
+"logans_clock\stm32f4xx_hal_i2c.o"
+"logans_clock\stm32f4xx_hal_i2c_ex.o"
+"logans_clock\stm32f4xx_hal_rcc.o"
+"logans_clock\stm32f4xx_hal_rcc_ex.o"
+"logans_clock\stm32f4xx_hal_flash.o"
+"logans_clock\stm32f4xx_hal_flash_ex.o"
+"logans_clock\stm32f4xx_hal_flash_ramfunc.o"
+"logans_clock\stm32f4xx_hal_gpio.o"
+"logans_clock\stm32f4xx_hal_dma_ex.o"
+"logans_clock\stm32f4xx_hal_dma.o"
+"logans_clock\stm32f4xx_hal_pwr.o"
+"logans_clock\stm32f4xx_hal_pwr_ex.o"
+"logans_clock\stm32f4xx_hal_cortex.o"
+"logans_clock\stm32f4xx_hal.o"
+"logans_clock\stm32f4xx_hal_exti.o"
+"logans_clock\stm32f4xx_hal_tim.o"
+"logans_clock\stm32f4xx_hal_tim_ex.o"
+"logans_clock\system_stm32f4xx.o"
+--strict --scatter "logans_clock\logans_clock.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "logans_clock.map" -o logans_clock\logans_clock.axf
