@@ -54,6 +54,18 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+uint8_t read_value;
+#define ADDR_APP_PROGRAM 0x800C800
+typedef void (*pFunction) (void);
+
+void enter_to_application(){
+	HAL_RCC_DeInit();	// Reset lai cac clock
+	HAL_DeInit();	
+	SCB->SHCSR &= ~(SCB_SHCSR_USGFAULTENA_Msk | SCB_SHCSR_BUSFAULTENA_Msk | SCB_SHCSR_MEMFAULTENA_Msk); // Tat cac ngat loi
+	__set_MSP(*(__IO uint32_t *) ADDR_APP_PROGRAM);	// Set lai MSP
+	pFunction app_entry = (pFunction) (*(__IO uint32_t*) (ADDR_APP_PROGRAM + 4));
+	app_entry();
+}
 
 /* USER CODE END 0 */
 
@@ -98,6 +110,11 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+		read_value = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1);
+		if(read_value == 0){
+			HAL_Delay(50);
+			enter_to_application();
+		}
   }
   /* USER CODE END 3 */
 }
